@@ -19,15 +19,12 @@ You can see for more details on [TestInterface.cs](https://github.com/kimsama/un
 See the [index.html](https://github.com/keijiro/unity-webview-integration/blob/gh-pages/index.html) for the details.
 
 ### Test
-
 Tested on the following devices:
 
 #### iPhone
-
 * iPhone4s on iOS 6.1 (built with Xcode 4.6 on OSX 10.8.2)
 
 #### Android
-
 * Samsung Galuxy S2
 * Samsung Galuxy Note II
 (all built on OSX 10.8.2)
