@@ -7,7 +7,7 @@ C# port of unity3d-webviw-integration sample on [unity-webview-integration](http
 
 ### Howto
 
-#### Uniry side
+#### Unity Side
 
 Also see the original sample of keijiro's if you want to use Unity javascript version as the following:
 
@@ -24,14 +24,13 @@ Tested on the following devices:
 
 #### iPhone
 
-iPhone4s on iOS 6.1 (built with Xcode 4.6 on OSX 10.8.2)
+* iPhone4s on iOS 6.1 (built with Xcode 4.6 on OSX 10.8.2)
 
 #### Android
 
-Samsung Galuxy S2
-Samsung Galuxy Note II
-
-(built on OSX 10.8.2)
+* Samsung Galuxy S2
+* Samsung Galuxy Note II
+(all built on OSX 10.8.2)
 
 ### License
 
