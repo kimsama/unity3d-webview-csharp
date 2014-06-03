@@ -21,7 +21,7 @@ extern "C" void _WebViewPluginMakeTransparentBackground() {
     [webView setOpaque:NO];
 }
 
-extern "C" void _WebViewPluginLoadUrl(const char* url, boolean isClearCache) {
+extern "C" void _WebViewPluginLoadUrl(const char* url, Boolean isClearCache) {
     if (isClearCache) {
         [[NSURLCache sharedURLCache] removeAllCachedResponses];
     }
