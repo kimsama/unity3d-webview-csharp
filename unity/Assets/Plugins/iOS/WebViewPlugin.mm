@@ -44,7 +44,7 @@ extern "C" void _WebViewPluginSetMargins(int left, int top, int right, int botto
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     
     // landscape
-    if (orientation) {
+    if (UIDeviceOrientationIsLandscape(orientation)) {
         frame.size.width = screenSize.height - (left + right) / scale;
         frame.size.height = screenSize.width - (top + bottom) / scale;
     } else { // portrait
