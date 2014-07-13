@@ -178,20 +178,20 @@ public class WebMediator : MonoBehaviour
 	
 	private static void UpdatePlatform() 
 	{
-	    var activity = unityPlayerClass.GetStatic.<AndroidJavaObject>("currentActivity");
-	    activity.Call("updateWebView", instance.lastRequestedUrl ? instance.lastRequestedUrl : "", instance.loadRequest, instance.visibility, instance.leftMargin, instance.topMargin, instance.rightMargin, instance.bottomMargin);
+	    var activity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
+	    activity.Call("updateWebView", instance.lastRequestedUrl != null ? instance.lastRequestedUrl : "", instance.loadRequest, instance.visibility, instance.leftMargin, instance.topMargin, instance.rightMargin, instance.bottomMargin);
 	}
-	
+
 	public static WebMediatorMessage PollMessage()
 	{
-	    var activity = unityPlayerClass.GetStatic.<AndroidJavaObject>("currentActivity");
-	    var message = activity.Call.<String>("pollWebViewMessage");
-	    return message ? new WebViewMessage(message) : null;
+	    var activity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
+	    var message = activity.Call<string>("pollWebViewMessage");
+		return message!= null ? new WebMediatorMessage(message) : null;
 	}
 	
 	public static void MakeTransparentWebViewBackground()
 	{
-	    var activity = unityPlayerClass.GetStatic.<AndroidJavaObject>("currentActivity");
+	    var activity = unityPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
 	    activity.Call("makeTransparentWebViewBackground");
 	}
 #endif
