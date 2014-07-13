@@ -9,7 +9,7 @@ C# port of unity3d-webviw-integration sample on [unity-webview-integration](http
 
 #### Unity Side
 
-Also see the original sample of keijiro's if you want to use Unity javascript version as the following:
+The original sample of keijiro's which is written with Unity's javascript can be found on [unity-webview-integration](https://github.com/keijiro/unity-webview-integration)
 
 See [Assets/Plugins/WebMediator.cs](https://github.com/kimsama/unity3d-webview-csharp/blob/master/unity/Assets/Plugins/WebMediator.cs) which does all the magic. It loads specified URL and can be specified page margin and so on. It also does pick message which is sent from webview. 
 You can see for more details on [TestInterface.cs](https://github.com/kimsama/unity3d-webview-csharp/blob/master/unity/Assets/Scripts/TestInterface.cs)
